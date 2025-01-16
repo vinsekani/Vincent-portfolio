@@ -31,6 +31,9 @@ const MobileNav = ({ nav, closeNav }: Props) => {
         <Link href="#blog" onClick={closeNav}>
           <div className="nav-link-mobile">BLOG</div>
         </Link>
+        <Link href="#contact" onClick={closeNav}>
+          <div className="nav-link-mobile">CONTACT</div>
+        </Link>
       </div>
       <div
         onClick={closeNav}

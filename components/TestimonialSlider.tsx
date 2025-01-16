@@ -39,21 +39,25 @@ const TestimonialSlider = () => {
         image="/test1.jpg"
         name="Shishi Moon"
         role="Web Developer"
+        description="He brought innovative ideas to the project that we hadn't considered, making the final product far better than we initially envisioned."
       />
       <ClientReview
         image="/test2.jpg"
         name="Bill Stack"
         role="Next.js Developer"
+        description="The app's user interface is clean, modern, and intuitive. Our customers love the new design, and we’ve received great feedback since launch."
       />
       <ClientReview
         image="/test3.jpg"
         name="Nicky Vicky"
         role="React Developer"
+        description="He was always available to address concerns and quickly resolved any issues that arose. His commitment to the project was evident from day one."
       />
       <ClientReview
         image="/test4.jpg"
         name="Fanie Jamoh"
         role="Node.js Developer"
+        description="He delivered the project ahead of schedule without compromising quality. It was refreshing to work with someone so professional and dependable."
       />
     </Carousel>
   );
