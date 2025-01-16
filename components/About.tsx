@@ -27,7 +27,7 @@ const About = () => {
         </div>
         <div className="lg:w-[500px] mx-auto md:mx-0 lg:h-[500px] w-[300px] h-[300px] relative">
           <Image
-            src="/vin2.JPG"
+            src="/vin2.jpg"
             alt="user"
             layout="fill"
             objectFit="contain"
