@@ -3,7 +3,7 @@
 import Hero from "@/components/Hero";
 import MobileNav from "@/components/MobileNav";
 import Nav from "@/components/Nav";
-import About from "@/components/About"
+import About from "@/components/About";
 import { useState } from "react";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills"

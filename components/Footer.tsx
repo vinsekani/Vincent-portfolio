@@ -1,6 +1,8 @@
 import React from "react";
 import { HiMap } from "react-icons/hi";
 import { HiDevicePhoneMobile, HiEnvelope } from "react-icons/hi2";
+import Link from "next/link";
+
 
 const Footer = () => {
   return (
@@ -34,7 +36,7 @@ const Footer = () => {
 
         <div className="flex items-center space-x-6">
           <div className="md:w-[6.5rem] md:h-[6.5rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#55e6a5]">
-            <HiEnvelope className="md:w-[4rem] md:h-[4rem] w-[3rem] h-[3rem] text-black"/>
+          <Link href="/contactpage"><HiEnvelope className="md:w-[4rem] md:h-[4rem] w-[3rem] h-[3rem] text-black"/></Link>
           </div>
           <div>
             <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">Send Email</h1>

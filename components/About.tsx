@@ -1,6 +1,7 @@
 import React from "react";
-import { HiArrowDownTray } from "react-icons/hi2";
+import { HiAcademicCap, HiArrowDownTray } from "react-icons/hi2";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -20,10 +21,10 @@ const About = () => {
             I am Vincent, a passionate FullStack developer dedicated to transforming ideas into impactful solutions. With a keen eye for innovation and a commitment to excellence, I enjoy tackling challenges and creating meaningful digital experiences.
             </p>
           </div>
-          <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
-            <p>Download Cv</p>
-            <HiArrowDownTray className="w-[1.6rem] h-[1.7rem] text-black" />
-          </button>
+          <Link href="/contactpage"> <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2">
+            <p>Hire Me</p>
+            <HiAcademicCap className="w-[1.6rem] h-[1.7rem] text-black" />
+          </button></Link>
         </div>
         <div className="lg:w-[500px] mx-auto md:mx-0 lg:h-[500px] w-[300px] h-[300px] relative">
           <Image

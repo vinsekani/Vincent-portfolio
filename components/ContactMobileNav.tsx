@@ -16,19 +16,19 @@ const MobileNav = ({ nav, closeNav }: Props) => {
     >
       <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
         {/* Add onClick handler to each Link */}
-        <Link href="#home" onClick={closeNav}>
+        <Link href="/#home" onClick={closeNav}>
           <div className="nav-link-mobile">HOME</div>
         </Link>
-        <Link href="#services" onClick={closeNav}>
+        <Link href="/#services" onClick={closeNav}>
           <div className="nav-link-mobile">SERVICES</div>
         </Link>
-        <Link href="#about" onClick={closeNav}>
+        <Link href="/#about" onClick={closeNav}>
           <div className="nav-link-mobile">ABOUT</div>
         </Link>
-        <Link href="#projects" onClick={closeNav}>
+        <Link href="/#projects" onClick={closeNav}>
           <div className="nav-link-mobile">PROJECTS</div>
         </Link>
-        <Link href="#blog" onClick={closeNav}>
+        <Link href="/#blog" onClick={closeNav}>
           <div className="nav-link-mobile">BLOG</div>
         </Link>
         <Link href="/contactpage" onClick={closeNav}>
