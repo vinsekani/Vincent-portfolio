@@ -100,7 +100,7 @@ const ContactPage: React.FC = () => {
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       // Handle failure
-      console.error("FAILED...", error.text);
+      console.error("FAILED...");
       setSuccessMessage("Failed to send your message. Please try again.");
     } finally {
       setLoading(false); 
