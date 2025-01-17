@@ -1,4 +1,4 @@
-"use client"; // Add this line at the top
+"use client";
 
 import Hero from "@/components/Hero";
 import MobileNav from "@/components/MobileNav";

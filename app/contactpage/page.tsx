@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import Particle from "../../components/Particle"; // Assuming Particle component is being used
+import Particle from "../../components/Particle";
 import emailjs from '@emailjs/browser';
 import ContactNav from "@/components/ContactNav";
 import ContactMobileNav from "@/components/ContactMobileNav"
@@ -37,7 +37,6 @@ const ContactPage: React.FC = () => {
       [name]: value,
     }));
 
-    // Clear error when user starts typing
     setErrors((prev) => ({
       ...prev,
       [name]: "",
@@ -79,33 +78,32 @@ const ContactPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
   
-    // Validate form data before submission (optional validation function)
+    // Validate form data before submission
     if (!validateForm()) {
-      return; // Stop submission if the form is invalid
+      return; 
     }
   
-    setLoading(true); // Show loading state
-    setSuccessMessage(""); // Reset success message
-  
+    setLoading(true); 
+    setSuccessMessage(""); 
     try {
       // Use EmailJS to send the email
       const result = await emailjs.sendForm(
-        ".b3t7uy@Q", // Replace with your EmailJS service ID
-        "template_m674v08", // Replace with your EmailJS template ID
-        form.current, // Form reference
-        "D3O9l7burq-PmwqwN" // Replace with your public EmailJS user ID
+        ".b3t7uy@Q", 
+        "template_m674v08", 
+        form.current, 
+        "D3O9l7burq-PmwqwN" 
       );
   
       // If successful, show a success message
       console.log("SUCCESS!", result.text);
       setSuccessMessage("Your message has been sent successfully!");
-      setFormData({ name: "", email: "", subject: "", message: "" }); // Reset the form
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       // Handle failure
       console.error("FAILED...", error.text);
       setSuccessMessage("Failed to send your message. Please try again.");
     } finally {
-      setLoading(false); // Hide loading state
+      setLoading(false); 
     }
   };
 

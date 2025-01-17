@@ -15,7 +15,6 @@ const MobileNav = ({ nav, closeNav }: Props) => {
       className={`fixed ${navAnimation} transform transition-all duration-300 top-0 left-0 right-0 bottom-0 z-[1000000] bg-[#09101a]`}
     >
       <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
-        {/* Add onClick handler to each Link */}
         <Link href="/#home" onClick={closeNav}>
           <div className="nav-link-mobile">HOME</div>
         </Link>
